@@ -45,14 +45,34 @@ PROCEDURE
 
 Model Waveform
 
-<img width="703" height="679" alt="image" src="https://github.com/user-attachments/assets/e7c7c7f8-ccf2-41ac-b1f3-325989941a6f" />
+![WhatsApp Image 2025-09-25 at 15 47 36_1fa430ae](https://github.com/user-attachments/assets/1e9b959b-4d59-4409-9624-6cad44f71734)
 
 Program
-
+```
+Am=5.1;
+Ac=10.2;
+fm=437;
+fc=4370;
+fs=43700;
+t=0:1/fs:2/fm;
+m=Am*cos(2*3.14*fm*t);
+subplot(3,1,1);
+plot(t,m);
+c=Ac*cos(2*3.14*fc*t);
+subplot(3,1,2);
+plot(t,c);
+s1=(Ac+m).*cos(2*3.14*fc*t);
+s2=(Ac-m).*cos(2*3.14*fc*t);
+s=s1-s2;
+subplot(3,1,3);
+plot(t,s);
 Output Graph
+```
 
 
 Tablular Column
+![WhatsApp Image 2025-09-25 at 15 51 12_6c0b4808](https://github.com/user-attachments/assets/67cea253-2bfc-4a38-a005-527a8d91b09e)
+
 
 
 Result
