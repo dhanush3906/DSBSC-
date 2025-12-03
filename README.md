@@ -49,11 +49,11 @@ Model Waveform
 
 Program
 ```
-Am=5.1;
-Ac=10.2;
-fm=437;
-fc=4370;
-fs=43700;
+Am=4.9;
+Ac=9.8;
+fm=417;
+fc=4170;
+fs=41700;
 t=0:1/fs:2/fm;
 m=Am*cos(2*3.14*fm*t);
 subplot(3,1,1);
@@ -72,7 +72,8 @@ Output Graph
 
 
 Tablular Column
-![WhatsApp Image 2025-09-25 at 15 51 12_513ca75f](https://github.com/user-attachments/assets/70f90409-31e8-4cdc-9637-d44e9f4cae63)
+![WhatsApp Image 2025-12-03 at 12 18 37_5ee656bd](https://github.com/user-attachments/assets/e3cb5d5a-3f87-41f5-8fbc-e99c3b93bbcb)
+
 
 
 Result
